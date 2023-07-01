@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 20px;
+  display: flex;
+  overflow: hidden;
+  margin: 7;
+  
+}
+
+.hero{
+  display: flex;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero .container {
+  flex: 1 1 40rem;
+}
+
+.hero h1 {
+  color: #fff8f8;
+  font-size: 30px;
+  transition: 1.5s;
+}
+.search-form:hover {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.search-form input {
+  width: 102%;
+  display: block;
+  background-color: linear-gradient(to right, #398a07, #a100ff);
+  border: none;
+  border-radius: 10px;
+  color: #000000;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.498), 0 15px 40px rgba(0, 0, 0, 0.493);
+}
+
+.search-form input::placeholder {
+  color: #bbb;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #ffffff3f;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #0000000d, 0 15px 40px rgba(255, 11, 11, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin: 1.5rem 0;
+}
+
+.dp{
+  margin: 0.2rem 0;
+  border-radius: 10%;
+  box-shadow: 0 5px 10px #00000088, 0 15px 40px rgba(0, 0, 0, 0.265);
+  height: 160px;
+  width: 150px;
+  margin-top: 0;
+}
+
+.user-info {
+  color: #050404c3;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #076683e6;
+  font: italic 1.05rem "Fira Sans", serif;
+  box-shadow: 0 5px 10px #0000000d, 0 15px 40px rgba(16, 1, 1, 0.336);
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.9rem;
+  margin-bottom: 0.1rem;
+  display: inline-table;
+  border-radius: 90px;
+}
+
+@media (max-width: 60px) {
+  .card {
+    margin: 8rem 0;
+  }
+}
